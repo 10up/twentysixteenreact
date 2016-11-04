@@ -22,7 +22,7 @@ To create JavaScript powered "app-like" experiences in WordPress, we currently h
 
 The options currently available lead us to build [ReactifyWP](https://github.com/10up/reactifywp/).
 
-*ReactifyWP uses PHP to execute Node.js code on the server.* This is made possible by [V8Js](https://github.com/phpv8/v8js) which is a PHP extension for [Google's V8 engine](https://developers.google.com/v8/). ReactifyWP exposes a simple API for registering PHP "tags" within JavaScript. It also includes a REST API for retrieving route information, updated tags, sidebar, menus, etc. as the state of your application changes. With ReactifyWP, we can serve a __true isomorphic application__ from within PHP. We get all the benefits of WordPress and all the benefits of powerful isomorphic Node.js technologies. No seperate Node.js/Express server necessary.
+*ReactifyWP uses PHP to execute Node.js code on the server.* This is made possible by [V8Js](https://github.com/phpv8/v8js) which is a PHP extension for [Google's V8 engine](https://developers.google.com/v8/). ReactifyWP exposes WordPress hooks, nav menus, sidebars, posts, and more within server-side Javascript. A simple API for registering PHP "tags" within JavaScript is made available. It also includes a REST API for retrieving route information, updated tags, sidebars, menus, etc. as the state of your application changes. With ReactifyWP, we can serve a __true isomorphic application__ from within PHP. We get all the benefits of WordPress and all the benefits of powerful isomorphic Node.js technologies. No separate Node.js/Express server is necessary.
 
 Twenty Sixteen React is a standard WordPress theme rebuilt using the following technologies:
 * [Node.js](https://nodejs.org/)
