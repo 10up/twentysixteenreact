@@ -1,0 +1,22 @@
+{
+    "name": "10up/twentysixteenreact",
+    "type": "wordpress-theme",
+    "description": "Twenty Sixteen as an isomorphic React.js application.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Taylor Lovett, 10up",
+            "email": "taylor.lovett@10up.com"
+        }
+    ],
+    "require": {
+        "10up/reactifywp": "dev-master"
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url":  "git@github.com:10up/reactifywp.git",
+            "no-api": true
+        }
+    ]
+}

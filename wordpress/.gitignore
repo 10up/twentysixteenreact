@@ -1,0 +1,8 @@
+*
+!wp-config.php
+!.gitignore
+!wp-content
+!wp-content/themes
+!wp-content/themes/twentysixteenreact
+!wp-content/themes/twentysixteenreact/*
+!wp-content/themes/twentysixteenreact/**

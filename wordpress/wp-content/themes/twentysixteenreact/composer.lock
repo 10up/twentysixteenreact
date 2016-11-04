@@ -1,0 +1,53 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "2670018c3864087d26e90f2c5dbf723a",
+    "content-hash": "ad30a626f0f76e902f79eecb6a8e9e4d",
+    "packages": [
+        {
+            "name": "10up/reactifywp",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:10up/reactifywp.git",
+                "reference": "cbbe161fcad5ed974c23fc456caf9fd625bed847"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/10up/reactifywp/zipball/cbbe161fcad5ed974c23fc456caf9fd625bed847",
+                "reference": "cbbe161fcad5ed974c23fc456caf9fd625bed847",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "ReactifyWP\\": "."
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Lovett, 10up",
+                    "email": "taylor.lovett@10up.com"
+                }
+            ],
+            "description": "API for turning a WordPress theme into an isomorphic React.js application. Requires v8js for PHP.",
+            "time": "2016-11-01 03:42:15"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": {
+        "10up/reactifywp": 20
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}
