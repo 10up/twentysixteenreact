@@ -50,3 +50,7 @@ This command will build the environment and spin up a Docker container with MySQ
 ## Contributing
 
 We are excited to see how the community receives the project. We'd love to receive links to open-sourced themes using ReactifyWP.
+
+## License
+
+Released under MIT by, and copyright 2016 by [10up](http://10up.com).
