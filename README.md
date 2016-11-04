@@ -53,4 +53,4 @@ We are excited to see how the community receives the project. We'd love to recei
 
 ## License
 
-Released under MIT by by [10up](https://10up.com).
+Released under MIT by [10up](https://10up.com).
