@@ -22,7 +22,7 @@ To create JavaScript powered "app-like" experiences in WordPress, we currently h
 
 The options currently available lead us to build [NodeifyWP](https://github.com/10up/nodeifywp/).
 
-*NodeifyWP uses PHP to execute Node.js code on the server.* This is made possible by [V8Js](https://github.com/phpv8/v8js) which is a PHP extension for [Google's V8 engine](https://developers.google.com/v8/). NodeifyWP exposes a simple API for registering PHP "tags" within JavaScript. It also includes a REST API for retrieving route information, updated tags, sidebar, menus, etc. as the state of your application changes. With NodeifyWP, we can serve a __true isomorphic application__ from within PHP. We get all the benefits of WordPress and all the benefits of powerful isomorphic Node.js technologies. No seperate Node.js/Express server necessary.
+*NodeifyWP uses PHP to execute Node.js code on the server.* This is made possible by [V8Js](https://github.com/phpv8/v8js) which is a PHP extension for [Google's V8 engine](https://developers.google.com/v8/). NodeifyWP exposes WordPress hooks, nav menus, sidebars, posts, and more within server-side Javascript. A simple API for registering PHP "tags" within JavaScript is made available. It also includes a REST API for retrieving route information, updated tags, sidebars, menus, etc. as the state of your application changes. With NodeifyWP, we can serve a __true isomorphic application__ from within PHP. We get all the benefits of WordPress and all the benefits of powerful isomorphic Node.js technologies. No separate Node.js/Express server is necessary.
 
 Twenty Sixteen React is a standard WordPress theme rebuilt using the following technologies:
 * [Node.js](https://nodejs.org/)
@@ -50,3 +50,8 @@ This command will build the environment and spin up a Docker container with MySQ
 ## Contributing
 
 We are excited to see how the community receives the project. We'd love to receive links to open-sourced themes using NodeifyWP.
+
+## License
+
+This is free software; you can redistribute it and/or modify it under the terms of the [GNU General Public License](http://www.gnu.org/licenses/gpl-2.0.html) as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.
+>>>>>>> 1de60d30112479471a267c3cb3ad57fc971e01ec
