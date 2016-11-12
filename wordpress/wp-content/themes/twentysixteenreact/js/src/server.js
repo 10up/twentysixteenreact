@@ -28,7 +28,7 @@ print(ReactDOMServer.renderToStaticMarkup(
         <head dangerouslySetInnerHTML={{__html: PHP.context.$template_tags.wp_head}}>
         </head>
         <body className={PHP.context.$template_tags.get_body_class}>
-        	<div className="reactifywp-app-container">
+        	<div className="nodeifywp-app-container">
         		<Provider store={store}>
 					<App />
 				</Provider>

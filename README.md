@@ -1,6 +1,6 @@
 # Twenty Sixteen React
 
-This is the Twenty Sixteen theme rebuilt using [ReactifyWP](https://github.com/10up/reactifywp/)
+This is the Twenty Sixteen theme rebuilt using [NodeifyWP](https://github.com/10up/nodeifywp/)
 
 <p align="center">
 <a href="http://10up.com/contact/"><img src="https://10updotcom-wpengine.s3.amazonaws.com/uploads/2016/10/10up-Github-Banner.png" width="850"></a>
@@ -20,15 +20,15 @@ To create JavaScript powered "app-like" experiences in WordPress, we currently h
 
 3. Some hybrid of the first two options.
 
-The options currently available lead us to build [ReactifyWP](https://github.com/10up/reactifywp/).
+The options currently available lead us to build [NodeifyWP](https://github.com/10up/nodeifywp/).
 
-*ReactifyWP uses PHP to execute Node.js code on the server.* This is made possible by [V8Js](https://github.com/phpv8/v8js) which is a PHP extension for [Google's V8 engine](https://developers.google.com/v8/). ReactifyWP exposes a simple API for registering PHP "tags" within JavaScript. It also includes a REST API for retrieving route information, updated tags, sidebar, menus, etc. as the state of your application changes. With ReactifyWP, we can serve a __true isomorphic application__ from within PHP. We get all the benefits of WordPress and all the benefits of powerful isomorphic Node.js technologies. No seperate Node.js/Express server necessary.
+*NodeifyWP uses PHP to execute Node.js code on the server.* This is made possible by [V8Js](https://github.com/phpv8/v8js) which is a PHP extension for [Google's V8 engine](https://developers.google.com/v8/). NodeifyWP exposes a simple API for registering PHP "tags" within JavaScript. It also includes a REST API for retrieving route information, updated tags, sidebar, menus, etc. as the state of your application changes. With NodeifyWP, we can serve a __true isomorphic application__ from within PHP. We get all the benefits of WordPress and all the benefits of powerful isomorphic Node.js technologies. No seperate Node.js/Express server necessary.
 
 Twenty Sixteen React is a standard WordPress theme rebuilt using the following technologies:
 * [Node.js](https://nodejs.org/)
 * [React.js](https://facebook.github.io/react/)
 * [Redux](http://redux.js.org/docs/introduction/)
-* [ReactifyWP](https://github.com/tlovett1/reactifywp/)
+* [NodeifyWP](https://github.com/10up/nodeifywp/)
 
 The theme uses all of the popular new Node.js technologies giving you the holy grail of "app-like" experiences with your favorite CMS.
 
@@ -49,4 +49,4 @@ This command will build the environment and spin up a Docker container with MySQ
 
 ## Contributing
 
-We are excited to see how the community receives the project. We'd love to receive links to open-sourced themes using ReactifyWP.
+We are excited to see how the community receives the project. We'd love to receive links to open-sourced themes using NodeifyWP.

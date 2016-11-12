@@ -9,17 +9,17 @@
  * @since Twenty Sixteen 1.0
  */
 
-\ReactifyWP\App::instance()->register_template_tag( 'twentysixteen_custom_header_sizes', function() {
+\NodeifyWP\App::instance()->register_template_tag( 'twentysixteen_custom_header_sizes', function() {
 	echo apply_filters( 'twentysixteen_custom_header_sizes', '(max-width: 709px) 85vw, (max-width: 909px) 81vw, (max-width: 1362px) 88vw, 1200px' );
 }, true, 'after_theme_setup' );
 
-\ReactifyWP\App::instance()->register_template_tag( 'twentysixteen_the_custom_logo', function() {
+\NodeifyWP\App::instance()->register_template_tag( 'twentysixteen_the_custom_logo', function() {
 	if ( function_exists( 'the_custom_logo' ) ) {
 		the_custom_logo();
 	}
 } );
 
-\ReactifyWP\App::instance()->register_post_tag( 'twentysixteen_entry_meta', function( $post ) {
+\NodeifyWP\App::instance()->register_post_tag( 'twentysixteen_entry_meta', function( $post ) {
 	if ( 'post' === get_post_type() ) {
 		$author_avatar_size = apply_filters( 'twentysixteen_author_avatar_size', 49 );
 		printf( '<span class="byline"><span class="author vcard">%1$s<span class="screen-reader-text">%2$s </span> <a class="url fn n" href="%3$s">%4$s</a></span></span>',
@@ -54,7 +54,7 @@
 	}
 } );
 
-\ReactifyWP\App::instance()->register_post_tag( 'twentysixteen_post_thumbnail', function() {
+\NodeifyWP\App::instance()->register_post_tag( 'twentysixteen_post_thumbnail', function() {
 	if ( post_password_required() || is_attachment() || ! has_post_thumbnail() ) {
 		return;
 	}
@@ -75,11 +75,11 @@
 	<?php endif; // End is_singular()
 } );
 
-\ReactifyWP\App::instance()->register_template_tag( 'twentysixteen_credits', function() {
+\NodeifyWP\App::instance()->register_template_tag( 'twentysixteen_credits', function() {
 	do_action( 'twentysixteen_credits' );
 } );
 
-\ReactifyWP\App::instance()->register_post_tag( 'edit_link', function() {
+\NodeifyWP\App::instance()->register_post_tag( 'edit_link', function() {
 	edit_post_link(
 		sprintf(
 			/* translators: %s: Name of current post */
@@ -91,7 +91,7 @@
 	);
 } );
 
-\ReactifyWP\App::instance()->register_post_tag( 'comments_title', function() {
+\NodeifyWP\App::instance()->register_post_tag( 'comments_title', function() {
     $comments_number = get_comments_number();
     if ( 1 === $comments_number ) {
         /* translators: %s: post title */
@@ -112,15 +112,15 @@
     }
 } );
 
-\ReactifyWP\App::instance()->register_post_tag( 'comments_title', function() {
+\NodeifyWP\App::instance()->register_post_tag( 'comments_title', function() {
 	the_comments_navigation();
 } );
 
-\ReactifyWP\App::instance()->register_post_tag( 'comments_number', function() {
+\NodeifyWP\App::instance()->register_post_tag( 'comments_number', function() {
 	echo get_comments_number();
 } );
 
-\ReactifyWP\App::instance()->register_post_tag( 'comments_html', function() {
+\NodeifyWP\App::instance()->register_post_tag( 'comments_html', function() {
 	?>
 	
 	<ol class="comment-list">
@@ -137,7 +137,7 @@
 	<?php
 } );
 
-\ReactifyWP\App::instance()->register_post_tag( 'comment_form', function() {
+\NodeifyWP\App::instance()->register_post_tag( 'comment_form', function() {
 	comment_form( array(
 		'title_reply_before' => '<h2 id="reply-title" class="comment-reply-title">',
 		'title_reply_after'  => '</h2>',

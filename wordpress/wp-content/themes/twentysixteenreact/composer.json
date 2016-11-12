@@ -10,12 +10,12 @@
         }
     ],
     "require": {
-        "10up/reactifywp": "dev-master"
+        "10up/nodeifywp": "dev-master"
     },
     "repositories": [
         {
             "type": "vcs",
-            "url":  "git@github.com:10up/reactifywp.git",
+            "url":  "git@github.com:10up/nodeifywp.git",
             "no-api": true
         }
     ]

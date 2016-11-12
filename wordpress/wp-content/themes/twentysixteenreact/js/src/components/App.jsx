@@ -21,7 +21,7 @@ class App extends React.Component {
 	handleAllClickEvents(event) {
 
 		const href = event.target.getAttribute('href');
-		const apiUrl = this.props.template_tags.home_url + '/wp-json/reactifywp/v1/route';
+		const apiUrl = this.props.template_tags.home_url + '/wp-json/nodeifywp/v1/route';
 		let self = this;
 
 		if ('A' === event.target.nodeName && href) {

@@ -18,5 +18,5 @@ render(
 	<Provider store={store}>
 		<App />
 	</Provider>,
-	document.querySelector('.reactifywp-app-container')
+	document.querySelector('.nodeifywp-app-container')
 );
