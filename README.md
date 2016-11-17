@@ -38,6 +38,7 @@ The theme uses all of the popular new Node.js technologies giving you the holy g
 2. Install Twenty Sixteen React just as you would a standard WordPress theme. There is no difference!
 3. From within the theme folder, run `composer install` to install theme PHP dependencies.
 4. From within the theme folder, run `npm install` then `webpack` to setup and package the JS application. You can install `webpack` globally like so `npm install -g webpack`.
+5. If you are running WordPress version less than 4.7, you will need to install the [JSON REST API](https://wordpress.org/plugins/rest-api/).
 
 ## Testing and Development
 
