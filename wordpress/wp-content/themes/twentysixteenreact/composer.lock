@@ -4,21 +4,21 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "b694de0c904f45a0051e81cd5149c2ae",
-    "content-hash": "d630659c6a0c4d52605572d37041b70d",
+    "hash": "e364d150deb88754a63883a257062eb8",
+    "content-hash": "8a3a025d270cc9c6f92379de1f244a76",
     "packages": [
         {
             "name": "10up/nodeifywp",
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "git@github.com:10up/nodeifywp.git",
-                "reference": "efd1754a5012c782c2ac5c6f75bc4a4ba38e3b4d"
+                "url": "https://github.com/10up/nodeifywp.git",
+                "reference": "9cce58af83b4edc812d980144547aa29a85c3e8b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/10up/nodeifywp/zipball/efd1754a5012c782c2ac5c6f75bc4a4ba38e3b4d",
-                "reference": "efd1754a5012c782c2ac5c6f75bc4a4ba38e3b4d",
+                "url": "https://api.github.com/repos/10up/nodeifywp/zipball/9cce58af83b4edc812d980144547aa29a85c3e8b",
+                "reference": "9cce58af83b4edc812d980144547aa29a85c3e8b",
                 "shasum": ""
             },
             "require": {
@@ -37,6 +37,7 @@
                     "NodeifyWP\\": "."
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -47,7 +48,7 @@
                 }
             ],
             "description": "API for turning a WordPress theme into an isomorphic JavaScript application. Requires V8Js for PHP.",
-            "time": "2016-11-12 20:31:05"
+            "time": "2016-11-12 20:41:48"
         },
         {
             "name": "composer/installers",
@@ -201,11 +202,11 @@
     ],
     "packages-dev": [],
     "aliases": [],
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "stability-flags": {
         "10up/nodeifywp": 20
     },
-    "prefer-stable": false,
+    "prefer-stable": true,
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": []
