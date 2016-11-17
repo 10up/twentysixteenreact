@@ -1,6 +1,6 @@
 {
   "name": "twentysixteenreact",
-  "version": "1.0",
+  "version": "1.0.0",
   "description": "Isomorphic React.js theme for WordPress powered by V8JS.",
   "main": "Gruntfile.js",
   "author": "Taylor Lovett, 10up",
