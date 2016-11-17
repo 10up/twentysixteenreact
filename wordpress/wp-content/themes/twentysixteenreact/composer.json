@@ -3,6 +3,8 @@
     "type": "wordpress-theme",
     "description": "Twenty Sixteen as an isomorphic React.js application.",
     "license": "MIT",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
     "authors": [
         {
             "name": "Taylor Lovett, 10up",
@@ -12,11 +14,9 @@
     "require": {
         "10up/nodeifywp": "dev-master"
     },
-    "repositories": [
-        {
-            "type": "vcs",
-            "url":  "git@github.com:10up/nodeifywp.git",
-            "no-api": true
+    "extra": {
+        "installer-paths": {
+            "vendor/{$name}/": ["type:wordpress-plugin"]
         }
-    ]
+    }
 }
