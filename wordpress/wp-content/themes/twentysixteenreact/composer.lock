@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "e364d150deb88754a63883a257062eb8",
-    "content-hash": "8a3a025d270cc9c6f92379de1f244a76",
+    "hash": "dc8805ee818a87b968a4954f9ce63964",
+    "content-hash": "14121a6d4f804735088c5ddc8c92fd24",
     "packages": [
         {
             "name": "10up/nodeifywp",
@@ -13,12 +13,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/10up/nodeifywp.git",
-                "reference": "9cce58af83b4edc812d980144547aa29a85c3e8b"
+                "reference": "a3afb24dc9635e2ff0a25703de110bb2570322de"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/10up/nodeifywp/zipball/9cce58af83b4edc812d980144547aa29a85c3e8b",
-                "reference": "9cce58af83b4edc812d980144547aa29a85c3e8b",
+                "url": "https://api.github.com/repos/10up/nodeifywp/zipball/a3afb24dc9635e2ff0a25703de110bb2570322de",
+                "reference": "a3afb24dc9635e2ff0a25703de110bb2570322de",
                 "shasum": ""
             },
             "require": {
@@ -39,7 +39,7 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "MIT"
+                "GPLv2"
             ],
             "authors": [
                 {
@@ -48,7 +48,7 @@
                 }
             ],
             "description": "API for turning a WordPress theme into an isomorphic JavaScript application. Requires V8Js for PHP.",
-            "time": "2016-11-12 20:41:48"
+            "time": "2016-11-17 11:25:29"
         },
         {
             "name": "composer/installers",

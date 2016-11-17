@@ -13,5 +13,10 @@
     ],
     "require": {
         "10up/nodeifywp": "dev-master"
+    },
+    "extra": {
+        "installer-paths": {
+            "vendor/{$name}/": ["type:wordpress-plugin"]
+        }
     }
 }
