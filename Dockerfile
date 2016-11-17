@@ -1,5 +1,6 @@
 FROM virusvn/docker-centos-v8js:nginx-php-fpm
 
+RUN yum clean all
 RUN yum install -y php-mysqli vim
 
 RUN cd /tmp \
