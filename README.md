@@ -34,7 +34,7 @@ The theme uses all of the popular new Node.js technologies giving you the holy g
 
 ## Install
 
-1. First, install V8Js and PHP 5.6+. This repository contains the Twenty Theme React theme within the `/wordpress/wp-content/themes` directory. The rest of the repository is for environment set up. If you just want the theme, you can pull it out. If you want to run the theme within the Docker Compose based development environment, run `docker-compose up` within the project root.
+1. First, install V8Js and PHP 5.6+. This repository contains the Twenty Sixteen Theme React theme within the `/wordpress/wp-content/themes` directory. The rest of the repository is for environment set up. If you just want the theme, you can pull it out. If you want to run the theme within the Docker Compose based development environment, run `docker-compose up` within the project root.
 2. Install Twenty Sixteen React just as you would a standard WordPress theme. There is no difference!
 3. From within the theme folder, run `composer install` to install theme PHP dependencies.
 4. From within the theme folder, run `npm install` then `webpack` to setup and package the JS application. You can install `webpack` globally like so `npm install -g webpack`.
