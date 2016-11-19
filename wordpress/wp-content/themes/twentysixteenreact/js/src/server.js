@@ -13,7 +13,7 @@ import thunk from 'redux-thunk';
 let initialState = Map({
 	route: PHP.context.$route,
 	posts: PHP.context.$posts,
-	template_tags: _.omit(PHP.context.$template_tags, ['wp_footer']),
+	template_tags: PHP.context.$template_tags,
 	nav_menus: PHP.context.$nav_menus,
 	sidebars: PHP.context.$sidebars,
 	user: PHP.context.$user
