@@ -10,16 +10,22 @@
  */
 
 \NodeifyWP\App::instance()->register_template_tag( 'twentysixteen_custom_header_sizes', function() {
-	echo apply_filters( 'twentysixteen_custom_header_sizes', '(max-width: 709px) 85vw, (max-width: 909px) 81vw, (max-width: 1362px) 88vw, 1200px' );
+	return apply_filters( 'twentysixteen_custom_header_sizes', '(max-width: 709px) 85vw, (max-width: 909px) 81vw, (max-width: 1362px) 88vw, 1200px' );
 }, true, 'after_theme_setup' );
 
 \NodeifyWP\App::instance()->register_template_tag( 'twentysixteen_the_custom_logo', function() {
 	if ( function_exists( 'the_custom_logo' ) ) {
+		ob_start();
+
 		the_custom_logo();
+
+		return ob_get_clean();
 	}
 } );
 
 \NodeifyWP\App::instance()->register_post_tag( 'twentysixteen_entry_meta', function( $post ) {
+	ob_start();
+
 	if ( 'post' === get_post_type() ) {
 		$author_avatar_size = apply_filters( 'twentysixteen_author_avatar_size', 49 );
 		printf( '<span class="byline"><span class="author vcard">%1$s<span class="screen-reader-text">%2$s </span> <a class="url fn n" href="%3$s">%4$s</a></span></span>',
@@ -52,12 +58,16 @@
 		comments_popup_link( sprintf( __( 'Leave a comment<span class="screen-reader-text"> on %s</span>', 'twentysixteen' ), get_the_title() ) );
 		echo '</span>';
 	}
+
+	return ob_get_clean();
 } );
 
 \NodeifyWP\App::instance()->register_post_tag( 'twentysixteen_post_thumbnail', function() {
 	if ( post_password_required() || is_attachment() || ! has_post_thumbnail() ) {
-		return;
+		return '';
 	}
+
+	ob_start();
 
 	if ( is_singular() ) :
 	?>
@@ -73,13 +83,21 @@
 	</a>
 
 	<?php endif; // End is_singular()
+
+	return ob_get_clean();
 } );
 
 \NodeifyWP\App::instance()->register_template_tag( 'twentysixteen_credits', function() {
+	ob_start();
+
 	do_action( 'twentysixteen_credits' );
+
+	return ob_get_clean();
 } );
 
 \NodeifyWP\App::instance()->register_post_tag( 'edit_link', function() {
+	ob_start();
+
 	edit_post_link(
 		sprintf(
 			/* translators: %s: Name of current post */
@@ -89,9 +107,13 @@
 		'<span class="edit-link">',
 		'</span>'
 	);
+
+	return ob_get_clean();
 } );
 
 \NodeifyWP\App::instance()->register_post_tag( 'comments_title', function() {
+	ob_start();
+
     $comments_number = get_comments_number();
     if ( 1 === $comments_number ) {
         /* translators: %s: post title */
@@ -110,17 +132,24 @@
             get_the_title()
         );
     }
+
+    return ob_get_clean();
 } );
 
 \NodeifyWP\App::instance()->register_post_tag( 'comments_title', function() {
+	ob_start();
+
 	the_comments_navigation();
+
+	return ob_get_clean();
 } );
 
 \NodeifyWP\App::instance()->register_post_tag( 'comments_number', function() {
-	echo get_comments_number();
+	return get_comments_number();
 } );
 
 \NodeifyWP\App::instance()->register_post_tag( 'comments_html', function() {
+	ob_start();
 	?>
 	
 	<ol class="comment-list">
@@ -135,13 +164,18 @@
 	</ol>
 
 	<?php
+	return ob_get_clean();
 } );
 
 \NodeifyWP\App::instance()->register_post_tag( 'comment_form', function() {
+	ob_start();
+
 	comment_form( array(
 		'title_reply_before' => '<h2 id="reply-title" class="comment-reply-title">',
 		'title_reply_after'  => '</h2>',
 	) );
+
+	return ob_get_clean();
 } );
 
 if ( ! function_exists( 'twentysixteen_entry_date' ) ) :
