@@ -13,4 +13,7 @@ RUN rm /etc/nginx/conf.d/default.conf
 
 RUN chmod +x /usr/local/bin/start.sh
 
+RUN curl -L -o /usr/local/bin/phpunit https://phar.phpunit.de/phpunit.phar
+RUN chmod +x /usr/local/bin/phpunit
+
 CMD ["start.sh"]

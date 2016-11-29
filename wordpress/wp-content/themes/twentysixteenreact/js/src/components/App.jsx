@@ -6,6 +6,7 @@ import { connect } from 'react-redux';
 import River from './River.jsx';
 import Single from './Single.jsx';
 import Header from './Header.jsx';
+import Missing404 from './404.jsx';
 import Footer from './Footer.jsx';
 import Sidebar from './Sidebar.jsx';
 import * as actions from '../actions/index.js';
@@ -25,7 +26,7 @@ class App extends React.Component {
 		let self = this;
 
 		if ('A' === event.target.nodeName && href) {
-			if (href.match(this.props.template_tags.home_url) && !href.match(/\/wp-admin/i)) {
+			if ((href.match(this.props.template_tags.home_url) || href.match(/^\//)) && !href.match(/\/wp-admin/i)) {
 				event.preventDefault();
 
 				this.props.actions.navigate(href.replace(this.props.template_tags.home_url, ''), apiUrl, this.props.user).then(function() {
@@ -45,12 +46,17 @@ class App extends React.Component {
             		<Header {...this.props} />
 
             		<div id="content" className="site-content">
-            			{ 'single' === this.props.route.type ?
-
-            				<Single {...this.props} />
-            			:
-            				<River {...this.props} />
-            			}
+						{ ('single' === this.props.route.type || '404' === this.props.route.type) ?
+							<div>
+								{ 'single' === this.props.route.type ?
+									<Single {...this.props} />
+								:
+									<Missing404 />
+								}
+							</div>
+						:
+							<River {...this.props} />
+						}
 
             			<Sidebar {...this.props} />
             		</div>
