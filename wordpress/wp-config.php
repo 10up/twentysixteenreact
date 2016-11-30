@@ -80,6 +80,14 @@ $table_prefix  = 'wp_';
 define('WP_DEBUG', true);
 define('SCRIPT_DEBUG', true);
 
+define('WP_CACHE', true);
+
+/**
+ * Setup Memcached for caching
+ */
+global $memcached_servers;
+$memcached_servers = array('default' => array('memcached:11211'));
+
 /* That's all, stop editing! Happy blogging. */
 
 /** Absolute path to the WordPress directory. */

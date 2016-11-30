@@ -10,10 +10,13 @@ services:
       MYSQL_DATABASE: wordpress
       MYSQL_USER: wordpress
       MYSQL_PASSWORD: wordpress
-
+  memcached:
+    image: memcached:latest
+    restart: always
   wordpress:
     depends_on:
       - db
+      - memcached
     build: .
     volumes:
       - "./wordpress:/var/www/html"
