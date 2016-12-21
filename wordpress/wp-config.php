@@ -23,16 +23,16 @@
 define('DB_NAME', 'wordpress');
 
 /** MySQL database username */
-define('DB_USER', 'wordpress');
+define('DB_USER', 'root');
 
 /** MySQL database password */
-define('DB_PASSWORD', 'wordpress');
+define('DB_PASSWORD', 'password');
 
 /** MySQL hostname */
-define('DB_HOST', 'db:3306');
+define('DB_HOST', 'mysql');
 
 /** Database Charset to use in creating database tables. */
-define('DB_CHARSET', 'utf8');
+define('DB_CHARSET', 'utf8mb4');
 
 /** The Database Collate type. Don't change this if in doubt. */
 define('DB_COLLATE', '');
@@ -46,14 +46,14 @@ define('DB_COLLATE', '');
  *
  * @since 2.6.0
  */
-define('AUTH_KEY',         'put your unique phrase here');
-define('SECURE_AUTH_KEY',  'put your unique phrase here');
-define('LOGGED_IN_KEY',    'put your unique phrase here');
-define('NONCE_KEY',        'put your unique phrase here');
-define('AUTH_SALT',        'put your unique phrase here');
-define('SECURE_AUTH_SALT', 'put your unique phrase here');
-define('LOGGED_IN_SALT',   'put your unique phrase here');
-define('NONCE_SALT',       'put your unique phrase here');
+define('AUTH_KEY',         'dA|ObLPmmp;xiAUU-=<B9Q:08Xi+Qvu<$=NTFJQM24K-8GHxdo~{Ow &}0tQtumq');
+define('SECURE_AUTH_KEY',  '(.!Nv~TragsUSWGPQDtv%7VzM=`-$;y#vvY^mu9UvW:YRbrhY2yR1gR0X [{cI0<');
+define('LOGGED_IN_KEY',    'U$41Q34p8S#Pq;xd$U ?sJ>/{&J_A|A(^l?xr8;/uGH>G_?pV==LAf:tA7,ex>{3');
+define('NONCE_KEY',        ',D`}<Cv4x~r4|e)M_iT]:+xwW|wtkZ9N[jx[MNG{*uJ[TZ^14Lg.vFqdg~a]QXMZ');
+define('AUTH_SALT',        'j(qB0yC03O|2pUM#(e!m>:gV,cl=b_(jrT^S&yAPYj*,S{)^~h9b)Gq@g@Eo}]8P');
+define('SECURE_AUTH_SALT', 'Oo=Dg5k@taM?CH(5}^v3dT<b`rcgF[evD2WpubvGJC4*&Z2f-Wr_M}D M-OI]dU.');
+define('LOGGED_IN_SALT',   ',rSdi^EQ,N);8t~*rs2}J;@)Ljknz39S!Hm=S56.$Z8;}?RP:,%.!a;X?#E7JkOQ');
+define('NONCE_SALT',       '&9{s(+]~pRS-ayE[:y-7clU8BQKA_O:f57Y]1hRv`N?$JXA$7jmI$$>]{@sEVv<@');
 
 /**#@-*/
 
@@ -77,16 +77,7 @@ $table_prefix  = 'wp_';
  *
  * @link https://codex.wordpress.org/Debugging_in_WordPress
  */
-define('WP_DEBUG', true);
-define('SCRIPT_DEBUG', true);
-
-define('WP_CACHE', true);
-
-/**
- * Setup Memcached for caching
- */
-global $memcached_servers;
-$memcached_servers = array('default' => array('memcached:11211'));
+define('WP_DEBUG', false);
 
 /* That's all, stop editing! Happy blogging. */
 

@@ -46,7 +46,7 @@ The project contains a fully-fledged Docker based environment. In order to run t
 
 `docker-compose up`
 
-This command will build the environment and spin up a Docker container with MySQl and one with PHP7, V8, and v8js. After the environment finishes initializing, navigate to `localhost:8080` in your browser. Don't forget to run `composer install`, `npm install`, and `webpack` within the theme.
+This command will build the environment and spin up a Docker container with MySQl and one with PHP7, V8, and V8Js. After the environment finishes initializing, navigate to `localhost` in your browser. Don't forget to run `composer install`, `npm install`, and `webpack` within the theme.
 
 ## Contributing
 
@@ -55,3 +55,5 @@ We are excited to see how the community receives the project. We'd love to recei
 ## License
 
 This is free software; you can redistribute it and/or modify it under the terms of the [GNU General Public License](http://www.gnu.org/licenses/gpl-2.0.html) as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.
+
+## Siege
