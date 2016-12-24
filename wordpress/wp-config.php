@@ -22,6 +22,8 @@
 /** The name of the database for WordPress */
 define('DB_NAME', 'wordpress');
 
+define( 'WP_CACHE_KEY_SALT', 'b' );
+
 /** MySQL database username */
 define('DB_USER', 'root');
 
@@ -78,6 +80,9 @@ $table_prefix  = 'wp_';
  * @link https://codex.wordpress.org/Debugging_in_WordPress
  */
 define('WP_DEBUG', false);
+
+global $memcached_servers;
+$memcached_servers = array('default' => array('memcached:11211'));
 
 /* That's all, stop editing! Happy blogging. */
 
