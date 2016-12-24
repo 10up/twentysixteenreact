@@ -1,16 +1,10 @@
 'use strict';
 
-import React from 'react';
-import ReactDOMServer from 'react-dom/server';
-import reducer from './reducer';
-import App from './components/App.jsx';
-import { createStore, applyMiddleware } from 'redux';
-import { Map } from 'immutable';
-import { Provider } from 'react-redux';
-import _ from 'lodash';
-import thunk from 'redux-thunk';
+/**
+ * Includes and React are compiled separately for heap snapshots
+ */
 
-let initialState = Map({
+let initialState = includes.immutable.Map({
 	route: PHP.context.$route,
 	posts: PHP.context.$posts,
 	template_tags: PHP.context.$template_tags,
@@ -19,11 +13,12 @@ let initialState = Map({
 	user: PHP.context.$user
 });
 
-const store = createStore(reducer, initialState, applyMiddleware(thunk));
+import App from './components/App.jsx';
+import { Provider } from 'react-redux';
 
-const clientUrl = PHP.context.$template_tags.stylesheet_directory_url + '/js/client.js'
+const store = includes.redux.createStore(includes.reducer, initialState, includes.redux.applyMiddleware(includes.thunk));
 
-print(ReactDOMServer.renderToStaticMarkup(
+print(includes.ReactDOMServer.renderToStaticMarkup(
 	<html>
         <head dangerouslySetInnerHTML={{__html: PHP.context.$template_tags.wp_head}}>
         </head>
@@ -34,6 +29,7 @@ print(ReactDOMServer.renderToStaticMarkup(
 				</Provider>
             </div>
 
+            <script src={PHP.includes_js_url}></script>
 			<script src={PHP.client_js_url}></script>
         </body>
     </html>

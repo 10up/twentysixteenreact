@@ -1,6 +1,5 @@
 'use strict';
 
-import React from 'react';
 import Post from './Post.jsx';
 import Comments from './Comments.jsx';
 

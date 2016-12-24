@@ -1,6 +1,5 @@
 'use strict';
 
-import React from 'react';
 import NavMenu from './NavMenu.jsx';
 
 class Header extends React.Component {

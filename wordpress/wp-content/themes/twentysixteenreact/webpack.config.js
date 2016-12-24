@@ -24,6 +24,21 @@ module.exports = [
 	    }
 	},
 	{
+	    entry: './js/src/includes.js',
+	    output: {
+	        path: __dirname,
+	        filename: './js/includes.js',
+			libraryTarget: 'var',
+			library: 'includes'
+	    },
+	    module: {
+			loaders: loaders
+		},
+	    stats: {
+	        colors: true
+	    }
+	},
+	{
 	    entry: './js/src/client.js',
 	    output: {
 	        path: __dirname,

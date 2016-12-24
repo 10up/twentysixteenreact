@@ -1,18 +1,17 @@
 'use strict';
 
-import React from 'react';
-import ReactDOMServer from 'react-dom/server';
+/**
+ * Includes are compiled separately for heap snapshot purposes
+ */
+
 import App from './components/App.jsx';
-import reducer from './reducer';
-import { render } from 'react-dom';
-import { createStore, applyMiddleware } from 'redux';
 import { Provider } from 'react-redux';
-import { Map } from 'immutable';
-import thunk from 'redux-thunk';
 
-let initialState = Map(window.__INITIAL_STATE__);
+import { render } from 'react-dom';
 
-const store = createStore(reducer, initialState, applyMiddleware(thunk));
+let initialState = includes.immutable.Map(window.__INITIAL_STATE__);
+
+const store = includes.redux.createStore(includes.reducer, initialState, includes.redux.applyMiddleware(includes.thunk));
 
 render(
 	<Provider store={store}>

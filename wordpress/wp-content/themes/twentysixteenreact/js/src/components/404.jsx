@@ -1,7 +1,5 @@
 'use strict';
 
-import React from 'react';
-
 class Missing404 extends React.Component {
 	render() {
 		return (

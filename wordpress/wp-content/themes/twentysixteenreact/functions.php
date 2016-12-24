@@ -27,7 +27,7 @@
 
 require_once __DIR__ . '/vendor/autoload.php';
 
-\NodeifyWP\App::setup( __DIR__ . '/js/server.js', get_stylesheet_directory_uri() . '/js/client.js' );
+\NodeifyWP\App::setup( __DIR__ . '/js/server.js', get_stylesheet_directory_uri() . '/js/client.js', __DIR__ . '/js/includes.js', get_stylesheet_directory_uri() . '/js/includes.js' );
 
 /**
  * Twenty Sixteen only works in WordPress 4.4 or later.

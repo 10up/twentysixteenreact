@@ -1,7 +1,5 @@
 'use strict';
 
-import React from 'react';
-
 class Post extends React.Component {
     render() {
     	let id = 'post-' + this.props.post.ID;

@@ -1,16 +1,11 @@
 'use strict';
 
-import React from 'react';
-import { bindActionCreators } from 'redux';
-import { connect } from 'react-redux';
 import River from './River.jsx';
 import Single from './Single.jsx';
 import Header from './Header.jsx';
 import Missing404 from './404.jsx';
 import Footer from './Footer.jsx';
 import Sidebar from './Sidebar.jsx';
-import * as actions from '../actions/index.js';
-import htmlescape from 'htmlescape';
 
 class App extends React.Component {
 	constructor(props) {
@@ -37,7 +32,7 @@ class App extends React.Component {
 	}
 
     render() {
-    	let initialStateString = 'window.__INITIAL_STATE__ = ' + htmlescape(this.props) + ';';
+    	let initialStateString = 'window.__INITIAL_STATE__ = ' + includes.htmlescape(this.props) + ';';
 
         return (
 			<div id="page" className="site">
@@ -84,10 +79,10 @@ const mapStateToProps = state => ({
 
 
 const mapDispatchToProps = dispatch => ({
-	actions: bindActionCreators(actions, dispatch)
+	actions: includes.redux.bindActionCreators(includes.actions, dispatch)
 });
 
-export default connect(
+export default includes.ReactRedux.connect(
 	mapStateToProps,
 	mapDispatchToProps
 )(App)
