@@ -40,3 +40,10 @@ RUN chmod +x /usr/local/bin/phpunit
 RUN curl -L -o /usr/local/bin/wp https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar
 RUN chmod +x /usr/local/bin/wp
 
+# Install PHP Redis extensions
+RUN cd /tmp && git clone https://github.com/phpredis/phpredis.git
+RUN cd /tmp/phpredis && phpize
+RUN cd /tmp/phpredis && ./configure
+RUN cd /tmp/phpredis && make && make install
+RUN echo "extension=redis.so" > /usr/local/etc/php/conf.d/redis.ini
+

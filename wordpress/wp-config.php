@@ -22,7 +22,7 @@
 /** The name of the database for WordPress */
 define('DB_NAME', 'wordpress');
 
-define( 'WP_CACHE_KEY_SALT', 'b' );
+define( 'WP_CACHE_KEY_SALT', 'cachesalt' );
 
 /** MySQL database username */
 define('DB_USER', 'root');
@@ -67,6 +67,8 @@ define('NONCE_SALT',       '&9{s(+]~pRS-ayE[:y-7clU8BQKA_O:f57Y]1hRv`N?$JXA$7jmI
  */
 $table_prefix  = 'wp_';
 
+define('WP_CACHE', true);
+
 /**
  * For developers: WordPress debugging mode.
  *
@@ -81,8 +83,11 @@ $table_prefix  = 'wp_';
  */
 define('WP_DEBUG', false);
 
-global $memcached_servers;
-$memcached_servers = array('default' => array('memcached:11211'));
+global $redis_server;
+$redis_server = [
+	'host' => 'redis',
+	'port' => 6379,
+];
 
 /* That's all, stop editing! Happy blogging. */
 
