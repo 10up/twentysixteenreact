@@ -20,5 +20,8 @@
     "redux-thunk": "^2.1.0",
     "webpack": "^1.13.2",
     "babel-preset-react": "^6.16.0"
+  },
+  "scripts": {
+    "postinstall" : "./node_modules/webpack/bin/webpack.js"
   }
 }

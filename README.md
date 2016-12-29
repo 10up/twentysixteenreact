@@ -17,10 +17,18 @@ Twenty Sixteen React is a __true isomorphic application__ within PHP. It provide
 
 * [NodeifyWP Environment](https://github.com/10up/nodeifywp-environmen)
 * [NodeifyWP](https://github.com/10up/nodeifywp)
+* [npm](https://www.npmjs.com/)
 
 ## Setup
 
-After properly setting up the NodeifyWP environment, just activate the theme.
+After properly setting up the NodeifyWP environment:
+
+1. Activate the theme
+2. Within the theme directory, run the following in the command line:
+
+  `npm install`
+
+3. Enable pretty permalinks in the WordPress admin.
 
 ## License
 
