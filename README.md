@@ -1,8 +1,7 @@
 # Twenty Sixteen React
 
-Twenty Sixteen React is an isomorphic WordPress theme built using [NodeifyWP](https://github.com/10up/nodeifywp). The theme executes Node.js code directly in PHP and utilizes the latest JavaScript technologies:
+Twenty Sixteen React is an isomorphic WordPress theme built using [NodeifyWP](https://github.com/10up/nodeifywp). The theme executes Node.js code directly in PHP utilizing the latest JavaScript technologies:
 
-* [Node.js](https://nodejs.org/)
 * [React.js](https://facebook.github.io/react/)
 * [Redux](http://redux.js.org/docs/introduction/)
 * [NodeifyWP](https://github.com/10up/nodeifywp/)
