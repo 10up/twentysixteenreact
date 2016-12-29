@@ -25,6 +25,14 @@
  * @since Twenty Sixteen 1.0
  */
 
+if ( ! class_exists( '\NodeifyWP\App' ) ) {
+	if ( is_admin() ) {
+		return;
+	} else {
+		wp_die( esc_html__( 'Twenty Sixteen React requires the NodeifyWP plugin.', 'twentysixteen' ) );
+	}
+}
+
 \NodeifyWP\App::setup( __DIR__ . '/js/server.js', get_stylesheet_directory_uri() . '/js/client.js', __DIR__ . '/js/includes.js', get_stylesheet_directory_uri() . '/js/includes.js' );
 
 /**
