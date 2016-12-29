@@ -1,0 +1,13 @@
+{
+    "name": "10up/twentysixteenreact",
+    "type": "wordpress-theme",
+    "description": "Twenty Sixteen as an isomorphic React.js application using NodeifyWP.",
+    "license": "MIT",
+    "prefer-stable": true,
+    "authors": [
+        {
+            "name": "Taylor Lovett, 10up",
+            "email": "taylor.lovett@10up.com"
+        }
+    ]
+}
