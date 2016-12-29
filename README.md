@@ -15,7 +15,7 @@ Twenty Sixteen React is a __true isomorphic application__ within PHP. It provide
 
 ## Requirements
 
-* [NodeifyWP Environment](https://github.com/10up/nodeifywp-environmen)
+* [NodeifyWP Environment](https://github.com/10up/nodeifywp-environment)
 * [NodeifyWP](https://github.com/10up/nodeifywp)
 * [npm](https://www.npmjs.com/)
 
