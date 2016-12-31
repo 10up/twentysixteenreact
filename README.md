@@ -23,7 +23,7 @@ Twenty Sixteen React is a __true isomorphic application__ within PHP. It provide
 
 After properly setting up the [NodeifyWP environment](https://github.com/10up/nodeifywp-environment):
 
-1. Activate the theme
+1. Activate the theme in WordPress
 2. Within the theme directory, run the following in the command line:
 
   `npm install`
